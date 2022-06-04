@@ -8,7 +8,9 @@
   position: fixed;
   right: -12rem;
   top: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow: scroll;
+
 }
 
 .header.active {
