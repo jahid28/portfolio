@@ -1,6 +1,6 @@
 .header {
-  background-color: #eb5353;
-  /* background-color: #aed298; */
+  /* background-color: #eb5353; */
+  background-color: red;
   height: 100%;
   /* top: 0; */
   transition: all linear 0.2s;
