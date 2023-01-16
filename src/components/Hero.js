@@ -7,6 +7,7 @@ import {
   Link,
   useNavigate
 } from "react-router-dom";
+import { useState } from 'react';
 
 export default function Hero() {
 
@@ -22,6 +23,12 @@ export default function Hero() {
     let scrYHero = window.pageYOffset
     document.getElementById('bgWhoAmI').style.left = scrYHero * .6 + 'px';
   })
+  // const [offsetY, setoffsetY] = useState(0)
+
+  // window.addEventListener('scroll', function () {
+
+  //     setoffsetY(window.pageYOffset)
+  // })
 
 
   return (

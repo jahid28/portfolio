@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import './About.css'
 import { AnimatePresence, motion } from 'framer-motion';
 export default function About() {
@@ -17,25 +17,25 @@ export default function About() {
 
       <div className='mainContent'>
         <div className='aboutImg'>
-          <img loading='lazy' src={require('./portfolioTransition.png')} alt="" />
+          <img loading='lazy' src={require('./pexels-miguel-á-padriñán-2882509.jpg')} alt="" />
         </div>
 
+
         <div className='aboutContent' >
-          <p>Hello everyone, I am Jahid Khan, age 19 as of 2022 and I am from New Delhi, India.
-            I have always an intesrest to learn and write code, I had a pretty good knowledge of
-            Python from my school days, so it was easy to grab the concepts of C++. After learning
-            some basic concepts of C++ I move on to learn Web-Development in Janauary 2022.
-            Then in March, I launched my youtube channel called 'Techy Web Dev' to teach Web-Dev, I upload tutorials and
-            various projects made with html, css, js on my channel. In May, after learnning alot of
-            front-end development, am currently learning ReactJS(infact I made this portfolio with react). After that I will
-            start practicing DSA in C++ and will grab those basic concepts back.
+          <p>Hello Everyone, my name is Jahid Khan, and I'm a 19-year-old native of New Delhi, India.
+            I have always been interested in learning and writing code, and since I had a pretty good foundation
+            in Python from my school days, learning the fundamentals of C++ were not so difficult. Having learned 
+            this, in January 2022, I start studying web development.
+            Then, in March, I launched my 'Techy Web Dev' YouTube channel to impart Web-Dev knowledge.
+            I practised ReactJS after learning front-end development (infact I made this portfolio with react).
+            I then studied nodeJS, expressJS, and mongoDB for backend.
             <br />
-            Now, after reading my whole coding journey if you have any questions or feedback
-            or just want to talk to me, you can send me a message by going to Contact Page.
+            Now that you've read about my entire coding adventure, if you have any questions, comments, or you
+            just want to chat, you can contact me by visiting to the Contact Page.
             <br />
-            Thankyou so much for reading this 😊.
+            I appreciate you reading this.
             <br />
-            <span>-updated on May,2022</span>
+            <span>-last updated July, 2022</span>
           </p>
         </div>
       </div>

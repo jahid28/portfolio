@@ -1,6 +1,6 @@
 import './App.css';
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect,memo,useCallback } from 'react';
 
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -20,31 +20,43 @@ import {
 
 function App() {
 
-
   let loc = useLocation()
   let locpath = loc.pathname
 
   useEffect(() => {
+    
     document.querySelector('.navContact').style.color = 'white'
     document.querySelector('.navHome').style.color = 'white'
     document.querySelector('.navAbout').style.color = 'white'
 
-    if (locpath == '/') {
-      document.querySelector('.navHome').style.color = 'rgb(235, 194, 95)'
+    switch (locpath) {
+      case '/':
+        document.querySelector('.navHome').style.color = 'rgb(235, 194, 95)'
+        break;
+      case '/about':
+        document.querySelector('.navAbout').style.color = 'rgb(235, 194, 95)'
+        break;
+      case '/contact':
+        document.querySelector('.navContact').style.color = 'rgb(235, 194, 95)'
+        break;
+
     }
-    else if (locpath == '/about') {
-      document.querySelector('.navAbout').style.color = 'rgb(235, 194, 95)'
-    }
-    else if (locpath == '/contact') {
-      document.querySelector('.navContact').style.color = 'rgb(235, 194, 95)'
-    }
+
+    // if (locpath == '/') {
+    // }
+    // else if (locpath == '/about') {
+    //   document.querySelector('.navAbout').style.color = 'rgb(235, 194, 95)'
+    // }
+    // else if (locpath == '/contact') {
+    //   document.querySelector('.navContact').style.color = 'rgb(235, 194, 95)'
+    // }
 
   }, [locpath])
 
 
   return (
     <div id='appBody' className='appBody'>
-     <Navbar />
+      <Navbar />
 
       <AnimatePresence exitBeforeEnter>
 
@@ -65,4 +77,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(App);

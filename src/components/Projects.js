@@ -58,6 +58,9 @@ export default function Projects() {
           <Suspense fallback={<div>Loading</div>}>
             <Cards id='card9' className='card ' visit='https://3dfollow.netlify.app' image={require('./Screenshot (120).jpg')} title='3D-Hover' desc='I always find 3D elements and hover effects cool. Hence I decided to make one.' />
           </Suspense>
+          <Suspense fallback={<div>Loading</div>}>
+            <Cards id='card10' className='card ' visit='https://connect4-2003.netlify.app' image={require('./connect4.png')} title='Connect-4' desc='A simple game of connect-4 which you can play with your friend.' />
+          </Suspense>
 
         </div>
       </div>

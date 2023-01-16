@@ -1,13 +1,25 @@
 .aboutBody {
-  color: white;
+  color: var(--p-color);
   height: 100vh;
   overflow-x: hidden;
-  background: url(Screenshot\ \(121\).png) no-repeat center;
+  background: var(--img-about);
   background-size: cover;
   display: grid;
   place-items: center;
   /* font-family: "Fira Mono", monospace; */
 }
+
+
+.darkmode{
+  --p-color:white;
+  --img-about:url(Screenshot\ \(121\).png) no-repeat center;
+}
+
+.lightmode{
+  --p-color:rgb(0, 0, 0);
+ --img-about:nill;
+  
+  }
 
 
 .mainContent {

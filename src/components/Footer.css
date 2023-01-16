@@ -9,6 +9,7 @@
   /* position: relative; */
   top: 1.5rem;
   overflow: hidden;
+  /* margin-top: 20px; */
   /* border: 2px solid rgb(190, 36, 36); */
 }
 
@@ -107,4 +108,7 @@
     position: relative;
     left: -3vw;
   }
+  /* .footerBody {
+    height: 5rem;
+  } */
 }

@@ -2,10 +2,20 @@
   transform: scale(1);
 }
 
+
+.darkmode{
+  --p-color:white;
+
+}
+.lightmode{
+  --p-color:rgb(0, 0, 0);
+  
+  }
+
+
 .cards {
   transition: all linear 0.3s;
 }
-
 
 .card {
   /* border: 2px solid red; */
@@ -15,7 +25,7 @@
 .card-title {
   text-align: center;
   /* color: whi; */
-  color: white;
+  color: var(--p-color);
   font-size: 2rem;
   font-family: "Rubik", sans-serif;
 }
@@ -23,10 +33,13 @@
 .card-text {
   text-align: center;
 
-  color: white;
+  color: var(--p-color);
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
 }
+
+
+
 
 @media (max-width: 1000px) {
   .cardBody {
@@ -74,6 +87,7 @@
   .card-text {
     font-size: 2.9vw;
   }
+  
 }
 
 @media (max-width: 400px) {

@@ -8,9 +8,7 @@
   position: fixed;
   right: -12rem;
   top: 0;
-  /* overflow: hidden; */
-  overflow: scroll;
-
+  overflow: hidden;
 }
 
 .header.active {
@@ -23,7 +21,57 @@
   margin: 0 2rem;
 }
 
+.toggle {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  position: relative;
+  width: 6rem;
+  display: flex;
+  border-radius: 20px;
 
+  top: 6rem;
+  left: 1.5rem;
+  cursor: pointer;
+}
+
+.fa-sun,
+.fa-moon {
+  /* margin-right: 1rem; */
+  /* margin-top: 1rem; */
+  /* text-align: center; */
+  font-size: 1.5rem;
+  color: rgb(240, 188, 45);
+  /* padding: 5px; */
+  /* border-radius: 100px; */
+  /* transition: all linear .3s; */
+  /* border: 2px solid white; */
+}
+.fa-sun {
+  position: relative;
+  top: 0.3rem;
+  left: 0.5rem;
+}
+.fa-moon {
+  position: relative;
+  left: 2.7rem;
+  top: 0.3rem;
+}
+
+.dot {
+  transition: all linear 0.2s;
+  transform: scale(1.7);
+  position: relative;
+  top: 0.45rem;
+  left: -2rem;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  background-color: rgb(30, 30, 30);
+}
+
+.dot.active {
+  left: 1.3rem;
+}
 
 .allLists {
   /* border: 2px solid red; */
@@ -65,26 +113,6 @@
   color: white;
 }
 
-#tog:hover {
+/* #tog:hover {
   color: white;
-}
-
-.mode{
-  /* border: 2px solid white; */
-}
-
-.fa-sun,.fa-moon{
-  margin-right: 1rem;
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 1.4rem;
-  color: white;
-  padding: 5px;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: all linear .3s;
-}
-
-.fa-sun:hover,.fa-moon:hover{
-  color: black;
-}
+} */
