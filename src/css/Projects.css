@@ -162,7 +162,7 @@
 
 @media (max-width: 500px) {
   .projectsBody {
-    height: 470vw;
+    height: 440vw;
   }
 }
 
@@ -172,12 +172,12 @@
     /* font-size: 8vw; */
   }
   .projectsBody {
-    height: 550vw;
+    height: 525vw;
   }
 }
 
 @media (max-width: 300px) {
   .projectsBody {
-    height: 590vw;
+    height: 570vw;
   }
 }

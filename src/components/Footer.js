@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.css'
+import '../css/Footer.css'
 import resume from './Resume.pptx'
 import { useNavigate } from 'react-router-dom';
 

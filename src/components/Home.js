@@ -47,9 +47,9 @@ export default function Home() {
                 <Projects />
             </Suspense>
 
-            {/* <Suspense fallback={<div>Loading</div>}>
+            <Suspense fallback={<div>Loading</div>}>
                 <Youtube />
-            </Suspense> */}
+            </Suspense> 
 
             <Suspense fallback={<div>Loading</div>}>
                 <Footer />

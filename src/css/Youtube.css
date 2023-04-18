@@ -82,7 +82,7 @@
 
 @media (max-width: 800px) {
   .ytBody {
-    height: 96vw;
+    height: 130vw;
   }
   .myYT {
     font-size: 8vw;
@@ -104,13 +104,13 @@
 
 @media (max-width: 700px) {
   .ytBody {
-    height: 100vw;
+    height: 135vw;
   }
 }
 
 @media (max-width: 600px) {
   .ytBody {
-    height: 110vw;
+    height: 145vw;
   }
   .para {
     font-size: 3.9vw;
@@ -123,7 +123,7 @@
 
 @media (max-width: 500px) {
   .ytBody {
-    height: 115vw;
+    height: 135vw;
   }
 }
 
@@ -133,7 +133,7 @@
     /* font-size: 8.5vw; */
   }
   .ytBody {
-    height: 130vw;
+    height: 150vw;
   }
   .para {
     font-size: 4.5vw;
@@ -148,7 +148,7 @@
     /* font-size: 8.5vsw; */
   }
   .ytBody {
-    height: 130vw;
+    height: 165vw;
   }
   .para {
     font-size: 4.5vw;

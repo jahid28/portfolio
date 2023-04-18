@@ -12,7 +12,7 @@
 
 .darkmode{
   --p-color:white;
-  --img-about:url(Screenshot\ \(121\).png) no-repeat center;
+  --img-about:url(../Images/Screenshot\ \(121\).png) no-repeat center;
 }
 
 .lightmode{

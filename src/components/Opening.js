@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './Opening.css';
+import '../css/Opening.css';
 
 export default function Opening() {
 

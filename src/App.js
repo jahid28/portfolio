@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import Blog from './components/Blog';
 import ErrorPage from './components/ErrorPage';
 
 import {
@@ -16,7 +17,6 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-
 
 function App() {
 
@@ -28,6 +28,7 @@ function App() {
     document.querySelector('.navContact').style.color = 'white'
     document.querySelector('.navHome').style.color = 'white'
     document.querySelector('.navAbout').style.color = 'white'
+    // document.querySelector('.navBlog').style.color = 'white'
 
     switch (locpath) {
       case '/':
@@ -39,17 +40,13 @@ function App() {
       case '/contact':
         document.querySelector('.navContact').style.color = 'rgb(235, 194, 95)'
         break;
+      // case '/blog':
+      //   document.querySelector('.navBlog').style.color = 'rgb(235, 194, 95)'
+      //   break;
 
     }
 
-    // if (locpath == '/') {
-    // }
-    // else if (locpath == '/about') {
-    //   document.querySelector('.navAbout').style.color = 'rgb(235, 194, 95)'
-    // }
-    // else if (locpath == '/contact') {
-    //   document.querySelector('.navContact').style.color = 'rgb(235, 194, 95)'
-    // }
+   
 
   }, [locpath])
 
@@ -69,7 +66,6 @@ function App() {
         </Routes>
 
       </AnimatePresence>
-
 
 
 

@@ -21,16 +21,16 @@
 }
 
 .darkmode{
---transition:url(JK.png) no-repeat center;
---bg-img: url(background-5035258_1920.jpg)  no-repeat center;
+--transition:url(../Images/JK.png) no-repeat center;
+--bg-img: url(../Images/background-5035258_1920.jpg)  no-repeat center;
 --op:0.4;
 --pp-color:rgb(255, 255, 255);
 --name-color:rgb(230, 185, 38);
 }
 
 .lightmode{
-  --transition:url(light\ mode\ transition.png) no-repeat center;
-  --bg-img: url(pexels-gdtography-911738.jpg)  no-repeat center; 
+  --transition:url(../Images/light\ mode\ transition.png) no-repeat center;
+  --bg-img: url(../Images/pexels-gdtography-911738.jpg)  no-repeat center; 
   --op:1;
   --pp-color:rgb(0, 0, 0);
   --name-color:rgb(141, 89, 21);

@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import './About.css'
+import '../css/About.css'
 import { AnimatePresence, motion } from 'framer-motion';
 export default function About() {
   return (
@@ -17,14 +17,14 @@ export default function About() {
 
       <div className='mainContent'>
         <div className='aboutImg'>
-          <img loading='lazy' src={require('./pexels-miguel-á-padriñán-2882509.jpg')} alt="" />
+          <img loading='lazy' src={require('../Images/pexels-miguel-á-padriñán-2882509.jpg')} alt="aboutImg" />
         </div>
 
 
         <div className='aboutContent' >
           <p>Hello Everyone, my name is Jahid Khan, and I'm a 19-year-old native of New Delhi, India.
             I have always been interested in learning and writing code, and since I had a pretty good foundation
-            in Python from my school days, learning the fundamentals of C++ were not so difficult. Having learned 
+            in Python from my school days, learning the fundamentals of C++ were not so difficult. Having learned
             this, in January 2022, I start studying web development.
             Then, in March, I launched my 'Techy Web Dev' YouTube channel to impart Web-Dev knowledge.
             I practised ReactJS after learning front-end development (infact I made this portfolio with react).

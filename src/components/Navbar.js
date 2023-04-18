@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './Navbar.css';
+import '../css/Navbar.css';
 
 import {
     BrowserRouter as Router,
@@ -30,13 +30,12 @@ export default function Navbar() {
 
 
     return (
-        <div >
+        <div id='body'>
             <i onClick={toggle} id='tog' className="fa-solid fa-bars tog"></i>
 
 
             <header id='header' className="header">
                 <div onClick={lightMode} className='toggle'>
-
                     <i class="fa-solid fa-sun"></i>
                     <i class="fa-solid fa-moon"></i>
                     <p className='dot' id='dot'></p>
@@ -46,6 +45,7 @@ export default function Navbar() {
                     <p onClick={removeToggle}><NavLink className='allLists' to="/"><p className='allLinks navHome'>Home</p></NavLink></p>
                     <p onClick={removeToggle}><NavLink className='allLists' to="/about"><p className='allLinks navAbout'>About</p></NavLink></p>
                     <p onClick={removeToggle}><NavLink className='allLists' to="/contact"><p className='allLinks navContact'>Contact</p></NavLink></p>
+                    {/* <p onClick={removeToggle}><NavLink className='allLists' to="/blog"><p className='allLinks navBlog'>Blog</p></NavLink></p> */}
                 </ul>
             </header>
 
