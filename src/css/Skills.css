@@ -4,7 +4,7 @@
 }
 .skillBody {
   color: var(--p-color);
-  height: 60rem;
+  height: 65rem;
   margin: 5px 10px;
 }
 
@@ -85,12 +85,21 @@ section {
 .fa-bootstrap {
   color: rgb(160, 77, 224);
 }
-.fa-wordpress {
+.tailwind{
+  color: rgb(120, 166, 208);
+}
+.typescript{
+  color: rgb(68, 105, 139);
+}
+.blender{
+  color: rgb(222, 129, 58);
+}
+/* .fa-wordpress {
   color: rgb(78, 97, 173);
 }
 .fa-figma {
   color: rgb(226, 96, 96);
-}
+} */
 .fa-node-js,
 .fa-envira {
   color: rgb(108, 185, 57);
@@ -177,7 +186,7 @@ section {
 
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateX(10deg) rotateY(calc(var(--i) * calc(360deg / 11)))
+  transform: rotateX(10deg) rotateY(calc(var(--i) * calc(360deg / 8)))
     translateZ(200px);
 }
 
@@ -207,13 +216,13 @@ section {
     left: -3rem;
   }
   .skillBody {
-    height: 63rem;
+    height: 72rem;
   }
 }
 
 @media (max-width: 900px) {
   .skillBody {
-    height: 56rem;
+    height: 65rem;
   }
 }
 
@@ -243,13 +252,13 @@ section {
     left: -3rem;
   }
   .skillBody {
-    height: 102vw;
+    height: 120vw;
   }
 }
 
 @media (max-width: 700px) {
   .skillBody {
-    height: 110vw;
+    height: 125vw;
   }
 }
 
@@ -275,13 +284,13 @@ section {
     left: -3rem;
   }
   .skillBody {
-    height: 125vw;
+    height: 130vw;
   }
 }
 
 @media (max-width: 500px) {
   .skillBody {
-    height: 130vw;
+    height: 135vw;
   }
 }
 
@@ -308,7 +317,7 @@ section {
     top: 80vw;
   }
   .skillBody {
-    height: 155vw;
+    height: 165vw;
   }
 }
 

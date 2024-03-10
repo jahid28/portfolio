@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../css/Opening.css';
-
+import Model from './Model';
 export default function Opening() {
 
     // const [offsetY, setoffsetY] = useState(0)
@@ -30,6 +30,10 @@ export default function Opening() {
                 <h1 id='myname'>Jahid Khan</h1>
                 {/* <p className='welcome'>and welcome to my portfolio</p> */}
             </div>
+
+            {/* <section id='modelCont'>
+                <Model/>
+            </section> */}
 
             {/* <a href="#bgWhoAmI" className='anchor'> */}
             <p className='welcome'>Scroll Down</p>

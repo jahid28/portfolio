@@ -1,11 +1,9 @@
 .projectsBody {
-  height: 120rem;
+  height: 85rem;
   /* border-radius: 20px; */
   /* margin: 5px 10px; */
   position: relative;
 }
-
-
 
 
 
@@ -23,6 +21,28 @@
   background-clip: content-box;
   -webkit-background-clip: text;
   margin: 20px 0px 0px 20px;
+}
+
+.allProjects{
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    rgb(182, 129, 49),
+    rgb(246, 221, 122),
+    rgb(160, 115, 47)
+  );
+  -webkit-text-stroke: 1px rgb(201, 157, 69);
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  margin: 20px 0px 0px 20px;
+  /* text-decoration: none; */
+
+}
+.allProjects:hover{
+  color: transparent;
+  text-shadow: 0px 0px 20px rgb(209, 159, 60);
 }
 
 .allWebsites {
@@ -59,14 +79,12 @@
   box-shadow: 0px 0px 10px 0px rgb(242, 183, 128);
 }
 
-.bgWebsites {
+/* .bgWebsites {
   width: 0;
   position: absolute;
-  /* position: relative; */
-}
+} */
 
-.bgWebsites p {
-  /* color: rgb(250, 3, 3); */
+/* .bgWebsites p {
   color: transparent;
   -webkit-text-stroke: 1px rgb(201, 157, 69);
   font-size: 20rem;
@@ -74,8 +92,7 @@
   position: relative;
   top: 2.7rem;
   left: 90rem;
-  /* margin: 2.5rem 0px; */
-}
+} */
 
 .bgProjects {
   width: 0;
@@ -90,15 +107,15 @@
   font-family: "Raleway", sans-serif;
   position: relative;
   top: 16rem;
-  left: -110rem;
+  left: 90rem;
 }
 
 
 @media (max-width: 1000px) {
-  .bgWebsites p {
+  /* .bgWebsites p {
     font-size: 23vw;
     top: 17rem;
-  }
+  } */
   .bgProjects p {
     font-size: 26vw;
     top: 17rem;
@@ -109,7 +126,7 @@
   }
 
   .projectsBody {
-    height: 130rem;
+    height: 85rem;
   }
 
   .someProjects {
@@ -119,7 +136,7 @@
 
 @media (max-width: 900px) {
   .projectsBody {
-    height: 120rem;
+    height: 85rem;
   }
 }
 
@@ -137,7 +154,7 @@
   }
 
   .projectsBody {
-    height: 340vw;
+    height: 120rem;
   }
   .card {
     margin: 10px 0rem;
@@ -150,19 +167,19 @@
 
 @media (max-width: 700px) {
   .projectsBody {
-    height: 370vw;
+    height: 110rem;
   }
 }
 
 @media (max-width: 600px) {
   .projectsBody {
-    height: 420vw;
+    height: 110rem;
   }
 }
 
 @media (max-width: 500px) {
   .projectsBody {
-    height: 440vw;
+    height: 95rem;
   }
 }
 
@@ -172,12 +189,12 @@
     /* font-size: 8vw; */
   }
   .projectsBody {
-    height: 525vw;
+    height: 90rem;
   }
 }
 
 @media (max-width: 300px) {
   .projectsBody {
-    height: 570vw;
+    height: 75rem;
   }
 }

@@ -34,7 +34,7 @@
   border-radius: 20px;
 
   top: 6rem;
-  left: 1.5rem;
+  left: 2.5rem;
   cursor: pointer;
 }
 
@@ -44,18 +44,19 @@
   /* margin-top: 1rem; */
   /* text-align: center; */
   font-size: 1.5rem;
+  /* border: 2px solid red; */
   color: rgb(240, 188, 45);
   /* padding: 5px; */
   /* border-radius: 100px; */
   /* transition: all linear .3s; */
   /* border: 2px solid white; */
 }
-.fa-sun {
+.fa-moon {
   position: relative;
   top: 0.3rem;
   left: 0.5rem;
 }
-.fa-moon {
+.fa-sun {
   position: relative;
   left: 2.7rem;
   top: 0.3rem;
@@ -65,7 +66,7 @@
   transition: all linear 0.2s;
   transform: scale(1.7);
   position: relative;
-  top: 0.45rem;
+  top: 0.5rem;
   left: -2rem;
   height: 20px;
   width: 20px;

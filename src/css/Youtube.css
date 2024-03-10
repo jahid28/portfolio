@@ -1,3 +1,13 @@
+
+
+.darkmode{
+  --p-color:white;
+ 
+}
+.lightmode{
+  --p-color:rgb(0, 0, 0);
+  
+  }
 .ytBody {
   height: 45rem;
   overflow: hidden;
@@ -22,7 +32,7 @@
 }
 
 .para {
-  color: rgb(255, 255, 255);
+  color: var( --p-color);
   font-family: "Rubik", sans-serif;
   margin: 20px 20px;
   font-size: 1.5rem;
@@ -65,7 +75,7 @@
   font-family: "Raleway", sans-serif;
   position: relative;
   top: 16rem;
-  left: 268rem;
+  left: 240rem;
 }
 
 @media (max-width: 1000px) {

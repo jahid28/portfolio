@@ -36,15 +36,15 @@ export default function Navbar() {
 
             <header id='header' className="header">
                 <div onClick={lightMode} className='toggle'>
-                    <i class="fa-solid fa-sun"></i>
                     <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
                     <p className='dot' id='dot'></p>
 
                 </div>
                 <ul>
-                    <p onClick={removeToggle}><NavLink className='allLists' to="/"><p className='allLinks navHome'>Home</p></NavLink></p>
-                    <p onClick={removeToggle}><NavLink className='allLists' to="/about"><p className='allLinks navAbout'>About</p></NavLink></p>
-                    <p onClick={removeToggle}><NavLink className='allLists' to="/contact"><p className='allLinks navContact'>Contact</p></NavLink></p>
+                    <p onClick={removeToggle}><NavLink className='allLists' to="/"><p className='allLinks navHome'>&lt;Home/&gt;</p></NavLink></p>
+                    <p onClick={removeToggle}><NavLink className='allLists' to="/about"><p className='allLinks navAbout'>&lt;About/&gt;</p></NavLink></p>
+                    <p onClick={removeToggle}><NavLink className='allLists' to="/contact"><p className='allLinks navContact'>&lt;Contact/&gt;</p></NavLink></p>
                     {/* <p onClick={removeToggle}><NavLink className='allLists' to="/blog"><p className='allLinks navBlog'>Blog</p></NavLink></p> */}
                 </ul>
             </header>

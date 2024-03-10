@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/Footer.css'
-import resume from './Resume.pptx'
 import { useNavigate } from 'react-router-dom';
 
 
@@ -43,7 +42,9 @@ export default function Footer() {
 
       <div className='resume'>
         <p>My Resume :</p>
-        <a href={resume} download='Resume'><button>Download Resume</button></a>
+        <a href="https://drive.google.com/file/d/1TLLkkv0SKwL6sGTGbeMbkZeF3LMcPrIx/view?usp=sharing" target='_blank' ><button className='btnResume'>My Resume</button></a>
+
+        {/* <a href={resume} download="Jahid's Resume"><button>Download Resume</button></a> */}
       </div>
 
       {/* <p></p> */}

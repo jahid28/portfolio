@@ -10,6 +10,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
 import ErrorPage from './components/ErrorPage';
+import AllProjects from './components/AllProjects';
 
 import {
   BrowserRouter as Router,
@@ -62,6 +63,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/allProjects' element={<AllProjects/>} />
+          {/* <Route path='/blog' element={<Blog />} /> */}
           <Route path='*' element={<ErrorPage />} />
         </Routes>
 
