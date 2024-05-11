@@ -45,7 +45,7 @@ export default function Projects() {
 
         <div className='allJSprojects' loading='lazy'>
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card1' className='card' visit="https://ecommerce-both-frontend.onrender.com" image={require('../Images/Screenshot (15).png')} title='Ecommerce Site' desc='This is one my biggest project yet in which have used MERN stack' />
+            <Cards id='card1' className='card' visit="https://twd-store.vercel.app/" image={require('../Images/Screenshot (15).png')} title='Ecommerce Site' desc='This is one my biggest project yet in which I have used MERN stack' />
           </Suspense>
 
           <Suspense fallback={<div>Loading</div>}>
@@ -67,16 +67,16 @@ export default function Projects() {
             <Cards id='card6' className='card' visit="https://calculator2003.netlify.app" image={require('../Images/Screenshot (117).png')} title='Calculator' desc='It is simple calculator to solve some basic calculations.' />
           </Suspense> */}
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card5' className='card ' visit="https://snake-and-ladder2003.netlify.app" image={require('../Images/Screenshot 2023-03-05 225457.png')} title='Snake & Ladder' desc='Another board game to test my js skill level.' />
+            <Cards id='card5' className='card ' visit="https://snake-and-ladder2003.netlify.app" image={require('../Images/Screenshot 2023-03-05 225457.png')} title='Snake & Ladder' desc='Simple Snake & Ladder board game.' />
           </Suspense>
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card6' className='card ' visit="https://worldmaptime.netlify.app/" image={require('../Images/Screenshot 2023-03-05 225415.png')} title='World Map' desc='It is a world map which shows the current time of any country.It uses an API.' />
+            <Cards id='card6' className='card ' visit="https://worldmaptime.netlify.app/" image={require('../Images/Screenshot 2023-03-05 225415.png')} title='World Map' desc='It is a world map which shows the current time of any country using an API.' />
           </Suspense>
           {/* <Suspense fallback={<div>Loading</div>}>
             <Cards id='card9' className='card ' visit='https://spellingbee2003.netlify.app' image={require('../Images/Screenshot 2023-03-05 225538.png')} title='Spelling Bee' desc='A game to test your vocabulary.' />
           </Suspense> */}
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card7' className='card ' visit='https://endangered.netlify.app' image={require('../Images/endangered.png')} title='Endangered Species' desc='A 3D website to spread awareness about these animals.' />
+            <Cards id='card7' className='card ' visit='https://endangered.netlify.app' image={require('../Images/endangered.png')} title='Endangered Species' desc='Website to spread awareness about endangered animals.' />
           </Suspense>
           {/* <Suspense fallback={<div>Loading</div>}>
             <Cards id='card9' className='card ' visit='https://cargame2003.netlify.app' image={require('../Images/Screenshot 2023-03-05 225522.png')} title='Car Dash' desc='A car game where you have to dodge the incoming cars.' />
@@ -85,7 +85,7 @@ export default function Projects() {
             <Cards id='card8' className='card ' visit='https://underwater2003.netlify.app' image={require('../Images/underwater.png')} title='Under Water' desc='Informative website about the depth of ocean with 3D models.' />
           </Suspense>
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card9' className='card ' visit='https://connect4-2003.netlify.app' image={require('../Images/connect4.png')} title='Connect-4' desc='A simple game of connect-4' />
+            <Cards id='card9' className='card ' visit='https://3d-facetracking-experience.netlify.app/' image={require('../Images/3d-face-track.png')} title='Infinite 3D journey' desc='An infinitely long 3D journey with face tracking.' />
           </Suspense>
 
         </div>

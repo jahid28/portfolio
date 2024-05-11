@@ -1,11 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+
 .skillBody {
   color: var(--p-color);
-  height: 65rem;
+  /* height: 65rem; */
   margin: 5px 10px;
+  position: relative;
 }
 
 
@@ -20,8 +18,58 @@
 
 
 section {
-  display: flex;
+  /* border: 2px solid red; */
+  /* display: flex; */
 }
+
+section > div{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+section > h2{
+color: rgb(200, 179, 95);
+font-weight: 600;
+font-size: 2.2rem;
+/* font-style: oblique; */
+margin-bottom: 1rem;
+
+}
+
+.eachSkill{
+
+  margin-right: 2rem;
+  z-index: 200;
+}
+
+.eachSkill p{
+  /* display: flex; */
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  border: 2px solid rgb(182, 129, 49);
+padding: 0 6px 0 6px;
+/* background: linear-gradient(
+  to right,
+  rgb(182, 129, 49),
+  rgb(246, 221, 122)
+); */
+}
+
+.eachSkill i{
+  align-self: center;
+  margin-right: .5rem;
+}
+.eachSkill .i{
+  margin-right: .5rem;
+  align-self: center;
+}
+.eachSkill>p{
+  margin-right: .5rem;
+
+}
+
+
 
 .myskills {
   color: transparent;
@@ -36,38 +84,48 @@ section {
   font-family: "Raleway", sans-serif;
   background-clip: content-box;
   -webkit-background-clip: text;
-  margin: 20px 0px 0px 20px;
+  /* margin: 20px 0px 0px 20px; */
 }
 
-.allskills {
+/* 
+.eachSkill {
   font-family: "Rubik", sans-serif;
   position: relative;
-  font-size: 35px;
-  margin-left: 2rem;
-  top: 6rem;
-}
-
-.allStars {
-  font-family: "Rubik", sans-serif;
-  position: relative;
-  font-size: 35px;
+  font-size: 33px;
   margin-left: 30px;
   top: 6rem;
-}
+} */
 
-.fiveStars {
-  margin-bottom: 10px;
-}
-
-.fiveStars .fa-solid,
+/* .fiveStars .fa-solid,
 .fiveStars .fa-regular {
   color: rgb(213, 68, 68);
   margin: 0px 2px;
-}
+} */
 
-.allskills p {
-  margin-bottom: 10px;
-}
+/* .allskills2{
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  font-size: 33px;
+  margin-left: auto;
+  margin-right: 30px;
+  top: 6rem;
+
+} */
+
+/* .allskills div {
+  width: fit-content;
+  
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+} */
+
+
+/* .allskills div .fa-brands {
+  align-self: center;
+} */
 
 .fa-html5 {
   color: rgb(245, 134, 70);
@@ -94,6 +152,19 @@ section {
 .blender{
   color: rgb(222, 129, 58);
 }
+.postgre{
+  color: rgb(84, 108, 129);
+}
+.redis{
+  color: rgb(201, 65, 65);
+}
+.python{
+  color: rgb(223, 179, 97);
+}
+.github{
+  color: rgb(84, 95, 123);
+}
+
 /* .fa-wordpress {
   color: rgb(78, 97, 173);
 }
@@ -101,7 +172,7 @@ section {
   color: rgb(226, 96, 96);
 } */
 .fa-node-js,
-.fa-envira {
+.mongodb {
   color: rgb(108, 185, 57);
 }
 
@@ -140,22 +211,29 @@ section {
 }
 
 .skillRotateBigCont {
+  width: 100vw;
+  /* display: grid;
+  place-items: center; */
+  position: absolute;
+  top: 60vh;
+  left: 95vw;
   transform: scale(1.5);
+  /* border: 2px solid green; */
 }
 
 .skillRotateCont {
   display: flex;
   position: relative;
-  top: 20rem;
-  left: 20rem;
+  /* top: 20rem; */
+  /* left: 20rem; */
   width: 0vw;
   height: 0;
   transform-style: preserve-3d;
   transform-origin: center;
-  animation: anime233 10s infinite linear;
+  animation: rotation 10s infinite linear;
 }
 
-@keyframes anime233 {
+@keyframes rotation {
   0% {
     transform: perspective(1200px) rotateY(0deg);
   }
@@ -195,10 +273,11 @@ section {
     font-size: 7vw;
   }
   .allskills {
-    top: 1rem;
-    left: 23vw;
-    margin-left: -6vw;
-    font-size: 4.2vw;
+    /* top: 1rem; */
+    /* left: 23vw; */
+    /* margin-left: -6vw; */
+    top: 3rem;
+    font-size: 3vw;
   }
   .allStars {
     left: 23vw;
@@ -209,20 +288,26 @@ section {
 
   .skillRotateBigCont main h2 {
     font-size: 4vw;
+    
+  }
+  .skillRotateBigCont{
+    top: 50vh;
+    left: 75vw;
+    /* z-index: -0; */
+    
   }
 
-  .skillRotateCont {
+  /* .skillRotateCont {
     top: 65vw;
     left: -3rem;
-  }
-  .skillBody {
-    height: 72rem;
-  }
+  } */
+  
 }
 
 @media (max-width: 900px) {
-  .skillBody {
-    height: 65rem;
+  .allskills {
+    
+    /* font-size: 25px; */
   }
 }
 
@@ -231,101 +316,122 @@ section {
     font-size: 8vw;
   }
   .allskills {
-    top: 0rem;
-    left: 23vw;
-    margin-left: -6vw;
-    font-size: 4.2vw;
+    /* top: 0rem;
+    left: 23vw; */
+    /* margin-left: -6vw; */
+    /* font-size: 4.2vw; */
+    /* font-size: 20px; */
   }
-  .allStars {
-    left: 23vw;
-    margin-left: 10vw;
-    top: 0rem;
-    font-size: 4.2vw;
+
+  .allskills1 {
+    margin-left: .2rem;
   }
+  .allskills2 {
+    margin-right: .2rem;
+  }
+  
 
   .skillRotateBigCont main h2 {
     font-size: 4vw;
   }
 
-  .skillRotateCont {
+  /* .skillRotateCont {
     top: 65vw;
     left: -3rem;
-  }
-  .skillBody {
-    height: 120vw;
-  }
+  } */
+ 
 }
 
 @media (max-width: 700px) {
-  .skillBody {
-    height: 125vw;
+  .allskills {
+   
+    /* font-size: 19px; */
+  }
+  .allskills div{
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 600px) {
-  .myskills {
-    font-size: 8vw;
+ 
+ 
+ 
+  .skillRotateBigCont {
+    top: 60vh;
   }
-  .allskills {
-    left: 20vw;
-    font-size: 4.5vw;
-  }
-  .allStars {
-    left: 20vw;
-    font-size: 4.5vw;
-  }
+  
 
   .skillRotateBigCont main h2 {
     font-size: 4vw;
   }
 
-  .skillRotateCont {
-    top: 70vw;
-    left: -3rem;
+  section >h2{
+    font-size: 6vw;
   }
-  .skillBody {
-    height: 130vw;
+  .eachSkill p{
+    font-size: 4vw;
+    margin-bottom: 2rem;
   }
+  .eachSkill{
+    margin-right: .2rem;
+  }
+
+ 
 }
 
 @media (max-width: 500px) {
-  .skillBody {
-    height: 135vw;
-  }
+  /* .skillBody {
+    height: 115vw;
+  } */
+  
+
+.allskills div{
+  margin-bottom: 10px;
+}
+.skillRotateBigCont {
+  top: 50vh;
+}
+.allskills {
+  /* font-size: 12px; */
+}
 }
 
 @media (max-width: 400px) {
-  .myskills {
-    margin: 20px 0px 0px 0px;
-    /* font-size: 8vw; */
+ 
+  .allskills div{
+    margin-bottom: 0px;
+  }
+  .allskills1 {
+    margin-left: .1rem;
+  }
+  .allskills2 {
+    margin-right: .1rem;
   }
 
   .allskills {
+    /* left: 20vw; */
+    font-size: 2.5vw;
+  }
+  /* .allStars {
     left: 20vw;
     font-size: 5vw;
-  }
-  .allStars {
-    left: 20vw;
-    font-size: 5vw;
-  }
+  } */
 
   .skillRotateBigCont main h2 {
     font-size: 5vw;
   }
 
   .skillRotateCont {
-    top: 80vw;
+    top: -10vw;
   }
-  .skillBody {
-    height: 165vw;
-  }
+
 }
 
 @media (max-width: 350px) {
   .skillRotateCont {
-    top: 95vw;
+    top: -20vw;
   }
-  .skillBody {
+  /* .skillBody {
     height: 175vw;
-  }
+  } */
 }

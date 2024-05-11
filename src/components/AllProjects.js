@@ -15,6 +15,11 @@ const AllProjects = () => {
             <p className='projectDesc'>A 3D website about the car Alfa Romeo</p>
         </a>
 
+        <a className='singleProject' href='https://connect4-2003.netlify.app/' target='_blank'>
+            <img className='projectImg' src={require('../Images/connect4.png')} alt="" />
+            <p className='projectDesc'>Connect 4 game</p>
+        </a>
+
         {/* <a className='singleProject' href='https://3dcarmodel.netlify.app/' target='_blank'>
             <img className='projectImg' src={require('../Images/donthover.png')} alt="" />
             <p className='projectDesc'>A simple game where you have to move cursor away from a button</p>

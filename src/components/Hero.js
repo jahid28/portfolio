@@ -77,7 +77,7 @@ export default function Hero() {
         <div className='iama'>I am a</div>
         <header>
           <p className="tagline">
-            <span className="tagline-skill"><span className="tagline-skill_inner">Fullstack Developer</span></span>
+            <span className="tagline-skill"><span className="tagline-skill_inner">Developer</span></span>
             <span className="tagline-skill"><span className="tagline-skill_inner">3D Artist</span></span>
             <span className="tagline-skill"><span className="tagline-skill_inner">Youtuber</span></span>
           </p>
@@ -89,7 +89,7 @@ export default function Hero() {
       <div className='twoBtns'>
         {/* <Link to='/about'><button className='btnAbout'>About Me</button></Link> */}
         <button onClick={aboutPage} className='btnAbout'>About Me</button>
-        <a href="https://drive.google.com/file/d/1TLLkkv0SKwL6sGTGbeMbkZeF3LMcPrIx/view?usp=sharing" target='_blank' ><button className='btnResume'>My Resume</button></a>
+        <a href="https://drive.google.com/file/d/1xigAgWPWeQCevREO0DVnJTgmpsdZpk5I/view?usp=sharing" target='_blank' ><button className='btnResume'>My Resume</button></a>
         {/* <a href={resume} download="Jahid's Resume"><button className='btnResume'>Download Resume</button></a> */}
       </div>
 

@@ -12,6 +12,7 @@
   height: 45rem;
   overflow: hidden;
   position: relative;
+  margin: 5px 10px;
 }
 
 .myYT {
@@ -28,13 +29,13 @@
   background-clip: content-box;
   -webkit-background-clip: text;
   /* position: absolute; */
-  margin: 20px 0px 0px 20px;
+  /* margin: 20px 0px 0px 20px; */
 }
 
 .para {
   color: var( --p-color);
   font-family: "Rubik", sans-serif;
-  margin: 20px 20px;
+  /* margin: 20px 20px; */
   font-size: 1.5rem;
 }
 
@@ -138,10 +139,7 @@
 }
 
 @media (max-width: 400px) {
-  .myYT {
-    margin-left: 0;
-    /* font-size: 8.5vw; */
-  }
+  
   .ytBody {
     height: 150vw;
   }
@@ -153,10 +151,7 @@
   }
 }
 @media (max-width: 350px) {
-  .myYT {
-    margin-left: 0;
-    /* font-size: 8.5vsw; */
-  }
+  
   .ytBody {
     height: 165vw;
   }
