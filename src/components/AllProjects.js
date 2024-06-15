@@ -10,6 +10,11 @@ const AllProjects = () => {
         <div className='allPCont'>
 
 
+        <a className='singleProject' href='https://snake-and-ladder2003.netlify.app/' target='_blank'>
+            <img className='projectImg' src={require('../Images/Screenshot 2023-03-05 225457.png')} alt="" />
+            <p className='projectDesc'>Simple snake & ladder game</p>
+        </a>
+
         <a className='singleProject' href='https://3dcarmodel.netlify.app/' target='_blank'>
             <img className='projectImg' src={require('../Images/alfa.png')} alt="" />
             <p className='projectDesc'>A 3D website about the car Alfa Romeo</p>

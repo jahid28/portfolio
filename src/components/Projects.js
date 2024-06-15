@@ -44,8 +44,13 @@ export default function Projects() {
         <p className='someProjects'>My Best Projects :</p>
 
         <div className='allJSprojects' loading='lazy'>
+
+        <Suspense fallback={<div>Loading</div>}>
+            <Cards id='card1' className='card ' visit="https://mycodenet.vercel.app/" image={require('../Images/codenet_pic.png')} title='CodeNet' desc='Social media app for programmers where they can share coding facts.' />
+          </Suspense>
+
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card1' className='card' visit="https://twd-store.vercel.app/" image={require('../Images/Screenshot (15).png')} title='Ecommerce Site' desc='This is one my biggest project yet in which I have used MERN stack' />
+            <Cards id='card2' className='card' visit="https://twd-store.vercel.app/" image={require('../Images/Screenshot (15).png')} title='Ecommerce Site' desc='This is one my biggest project yet in which I have used MERN stack' />
           </Suspense>
 
           <Suspense fallback={<div>Loading</div>}>
@@ -57,7 +62,7 @@ export default function Projects() {
           </Suspense>
 
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card2' className='card' visit="https://chess2003.netlify.app" image={require('../Images/Screenshot 2023-04-21 001154.png')} title='Chess' desc='Made this chess game in 2 weeks with html,css & js' />
+            <Cards id='card5' className='card' visit="https://chess2003.netlify.app" image={require('../Images/Screenshot 2023-04-21 001154.png')} title='Chess' desc='Made this chess game in 2 weeks with html,css & js' />
           </Suspense>
           
           {/* <Suspense fallback={<div>Loading</div>}>
@@ -66,9 +71,7 @@ export default function Projects() {
           {/* <Suspense fallback={<div>Loading</div>}>
             <Cards id='card6' className='card' visit="https://calculator2003.netlify.app" image={require('../Images/Screenshot (117).png')} title='Calculator' desc='It is simple calculator to solve some basic calculations.' />
           </Suspense> */}
-          <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card5' className='card ' visit="https://snake-and-ladder2003.netlify.app" image={require('../Images/Screenshot 2023-03-05 225457.png')} title='Snake & Ladder' desc='Simple Snake & Ladder board game.' />
-          </Suspense>
+         
           <Suspense fallback={<div>Loading</div>}>
             <Cards id='card6' className='card ' visit="https://worldmaptime.netlify.app/" image={require('../Images/Screenshot 2023-03-05 225415.png')} title='World Map' desc='It is a world map which shows the current time of any country using an API.' />
           </Suspense>
