@@ -7,8 +7,7 @@ export default function Blog() {
     // const [, setArticles] = useState([])
 
     const fetchData = async () => {
-        // const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=633989d407d145059f015c2a962dce3c&page=${page + 1}&pageSize=${props.pageSize}`
-        const url=`https://www.googleapis.com/youtube/v3/search?key=AIzaSyAlqBkmh9PNmnfg39nAbkucFmMKfcfg_3g&channelId=UCe65gfP4Vr1_NVbZo-r-oSA&part=snippet,id&order=date`
+        const url="url"
         // setPage(page + 1)
         // this.setState({ loading: true })
         let data = await fetch(url)
@@ -18,7 +17,6 @@ export default function Blog() {
         // let totalResults=parsedata.pageInfo.totalResults
         console.log(parsedata)
         // setTotalResults(parsedata.totalResults)
-        // const newurl=`https://www.googleapis.com/youtube/v3/search?key=AIzaSyAlqBkmh9PNmnfg39nAbkucFmMKfcfg_3g&channelId=UCe65gfP4Vr1_NVbZo-r-oSA&part=snippet,id&order=date&maxResults=5`
         //  let newdata = await fetch(newurl)
         //  let newparsedata = await newdata.json()
         // setArticles(newparsedata.items)
