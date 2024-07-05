@@ -54,12 +54,14 @@ export default function Projects() {
           </Suspense>
 
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card3' className='card' visit="https://organize-hub.vercel.app/" image={require('../Images/organize_hub.png')} title='Organize Hub' desc='My first website with NextJS which is a place to take notes and add daily tasks.' />
+            <Cards id='card4' className='card' visit="https://jahidkhanportfolio3d.netlify.app/" image={require('../Images/3denv.png')} title='3D world' desc='A 3D environment made in ThreeJS where you can explore and find interactive things.' />
           </Suspense>
 
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card4' className='card' visit="https://jahidkhanportfolio3d.netlify.app/" image={require('../Images/3denv.png')} title='3D world' desc='A 3D environment made in ThreeJS where you can explore and find interactive things.' />
+            <Cards id='card3' className='card' visit="https://organize-hub.vercel.app/" image={require('../Images/organize_hub.png')} title='Organize Hub' desc='My first website with NextJS which is a place to take notes and add daily tasks.' />
           </Suspense>
+
+         
 
           <Suspense fallback={<div>Loading</div>}>
             <Cards id='card5' className='card' visit="https://chess2003.netlify.app" image={require('../Images/Screenshot 2023-04-21 001154.png')} title='Chess' desc='Made this chess game in 2 weeks with html,css & js' />

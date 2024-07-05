@@ -42,7 +42,7 @@ export default function Footer() {
 
       <div className='resume'>
         <p>My Resume :</p>
-        <a href="https://drive.google.com/file/d/1xigAgWPWeQCevREO0DVnJTgmpsdZpk5I/view?usp=sharing" target='_blank' ><button className='btnResume'>My Resume</button></a>
+        <a href="https://drive.google.com/file/d/1aSPWT9GFw6fqPW8El3DlM2B4ZgbI_oJV/view?usp=sharing" target='_blank' ><button className='btnResume'>My Resume</button></a>
 
         {/* <a href={resume} download="Jahid's Resume"><button>Download Resume</button></a> */}
       </div>

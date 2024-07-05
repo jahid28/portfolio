@@ -1,46 +1,39 @@
-import React, { useEffect, useState } from 'react'
-import '../css/Opening.css';
-import Model from './Model';
+import React, { useEffect, useState, useRef, Suspense } from "react";
+import "../css/Opening.css";
+
 export default function Opening() {
+  useEffect(() => {
+    const handleScroll = () => {
+      let yaxis = window.scrollY;
+      document.getElementById("openingBody").style.top = `${-yaxis * 0.5}px`;
+    };
 
-    // const [offsetY, setoffsetY] = useState(0)
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-    // window.addEventListener('scroll', function () {
+  return (
+    <div id="openingBody" className="body">
+      <a
+        id="upArrow"
+        onClick={() => {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0;
+        }}
+      >
+        <i className="fa-solid fa-circle-chevron-up"></i>
+      </a>
 
-    //     setoffsetY(window.pageYOffset)
-    // })
+      <div className="heading">
+        <p className="hi">Hi, I'm</p>
+        <h1 id="myname">Jahid Khan</h1>
+      </div>
 
-    window.addEventListener("scroll", function () {
-        let yaxis = window.pageYOffset
-        document.getElementById("openingBody").style.top = `${-yaxis * .5}px`
-        // document.getElementById("myname").style.top=`${yaxis}px`
-        // document.getElementById("myname").style.opacity=`${1-yaxis*0.004}`
-
-    })
-
-    return (
-        <div id='openingBody' className='body'>
-
-            <a id='upArrow' href="#openingBody">
-                <i className="fa-solid fa-circle-chevron-up"></i>
-            </a>
-
-            <div className='heading'>
-                <p className='hi'>Hi, I'm</p>
-                <h1 id='myname'>Jahid Khan</h1>
-                {/* <p className='welcome'>and welcome to my portfolio</p> */}
-            </div>
-
-            {/* <section id='modelCont'>
-                <Model/>
-            </section> */}
-
-            {/* <a href="#bgWhoAmI" className='anchor'> */}
-            <p className='welcome'>Scroll Down</p>
-            <i className="fa-solid fa-arrow-down-long arrow"></i>
-            {/* </a> */}
-
-
-        </div>
-    )
+    
+      <p className="welcome">Scroll Down</p>
+      <i className="fa-solid fa-arrow-down-long arrow"></i>
+    </div>
+  );
 }

@@ -8,6 +8,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Youtube from './Youtube';
 import Footer from './Footer';
+// import { CanvasFooter } from './Footer';
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
     const Projects = lazy(() => import('./Projects.js'))
     const Youtube = lazy(() => import('./Youtube.js'))
     const Footer = lazy(() => import('./Footer.js'))
+    // const CanvasFooter=lazy(()=>import('./Footer'))
 
     return (
         <div style={{ overflow: 'hidden', position: 'relative', }}>
@@ -54,6 +56,10 @@ export default function Home() {
             <Suspense fallback={<div>Loading</div>}>
                 <Footer />
             </Suspense>
+
+            {/* <Suspense fallback={<div>Loading</div>}>
+                <CanvasFooter />
+            </Suspense> */}
 
 
         </div>

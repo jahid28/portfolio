@@ -48,6 +48,7 @@ margin-bottom: 1rem;
   font-size: 1.8rem;
   margin-bottom: 4rem;
   border: 2px solid rgb(182, 129, 49);
+  border-radius: 5px;
 padding: 0 6px 0 6px;
 /* background: linear-gradient(
   to right,
@@ -174,6 +175,11 @@ padding: 0 6px 0 6px;
 .fa-node-js,
 .mongodb {
   color: rgb(108, 185, 57);
+}
+.php{
+  color: rgb(218, 142, 218);
+  width: 2.4rem;
+  margin-right: .5rem;
 }
 
 :root .eachSkill1 {

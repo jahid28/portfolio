@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../css/AllProjects.css"
 const AllProjects = () => {
+    useEffect(() => {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0;
+    },[])
   return (
     <div>
         <div className='allProjectsP'>

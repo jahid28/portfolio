@@ -104,7 +104,7 @@
 }
 
 #tog {
-  z-index: 99;
+  z-index: 999;
   font-size: 2rem;
   position: fixed;
   right: 2rem;

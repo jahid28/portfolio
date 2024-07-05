@@ -9,7 +9,7 @@ export default function Youtube() {
 
   window.addEventListener('scroll', function () {
     let scrYYT = window.pageYOffset
-    document.getElementById('bgYoutube').style.left = -scrYYT + 'px';
+    document.getElementById('bgYoutube').style.left = -scrYYT -290+ 'px';
   })
 
 

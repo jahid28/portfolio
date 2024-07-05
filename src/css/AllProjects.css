@@ -28,7 +28,7 @@
 .singleProject {
   display: flex;
   border: 1px solid rgb(169, 124, 82);
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 20px 40px 0px 40px;
   text-decoration: none;
   transition: all linear 0.2s;
@@ -40,7 +40,7 @@
 .projectImg {
   width: 20vw;
   height: 20vh;
-  border-radius: 20px;
+  border-radius: 10px;
   /* height: 100px; */
 }
 .projectDesc {

@@ -1,7 +1,6 @@
 import React, { memo } from 'react'
 import '../css/About.css'
 import { AnimatePresence, motion } from 'framer-motion';
-import Model from './Model';
 export default function About() {
   return (
     <div className='aboutBody' >
