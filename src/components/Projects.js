@@ -50,21 +50,23 @@ export default function Projects() {
           </Suspense>
 
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card2' className='card' visit="https://twd-store.vercel.app/" image={require('../Images/Screenshot (15).png')} title='Ecommerce Site' desc='This is one my biggest project yet in which I have used MERN stack' />
+            <Cards id='card2' className='card' visit="https://twd-store.vercel.app/" image={require('../Images/Screenshot (15).jpg')} title='Ecommerce Site' desc='Made it using MERN stack with features like demo payment, voice search, etc' />
           </Suspense>
 
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card4' className='card' visit="https://jahidkhanportfolio3d.netlify.app/" image={require('../Images/3denv.png')} title='3D world' desc='A 3D environment made in ThreeJS where you can explore and find interactive things.' />
+            <Cards id='card3' className='card' visit="https://jahidkhanportfolio3d.netlify.app/" image={require('../Images/3denv.png')} title='3D world' desc='A 3D environment made in ThreeJS where you can explore and find interactive things.' />
           </Suspense>
 
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card3' className='card' visit="https://organize-hub.vercel.app/" image={require('../Images/organize_hub.png')} title='Organize Hub' desc='My first website with NextJS which is a place to take notes and add daily tasks.' />
+            <Cards id='card4' className='card' visit="https://organize-hub.vercel.app/" image={require('../Images/organize_hub.png')} title='Organize Hub' desc='This was my first website using NextJS which is a place to take notes and add daily tasks.' />
           </Suspense>
 
-         
+         <Suspense fallback={<div>Loading</div>}>
+            <Cards id='card5' className='card ' visit='https://r3f-10x.vercel.app/' image={require('../Images/r3f-10x.png')} title='Guide to R3F' desc='This is a guide to react-three-fibre with 10 unique and fun sections.' />
+          </Suspense>
 
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card5' className='card' visit="https://chess2003.netlify.app" image={require('../Images/Screenshot 2023-04-21 001154.png')} title='Chess' desc='Made this chess game in 2 weeks with html,css & js' />
+            <Cards id='card6' className='card' visit="https://chess2003.netlify.app" image={require('../Images/Screenshot 2023-04-21 001154.png')} title='Chess' desc='Made this chess game in 2 weeks with html,css & js' />
           </Suspense>
           
           {/* <Suspense fallback={<div>Loading</div>}>
@@ -75,23 +77,23 @@ export default function Projects() {
           </Suspense> */}
          
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card6' className='card ' visit="https://worldmaptime.netlify.app/" image={require('../Images/Screenshot 2023-03-05 225415.png')} title='World Map' desc='It is a world map which shows the current time of any country using an API.' />
+            <Cards id='card7' className='card ' visit="https://worldmaptime.netlify.app/" image={require('../Images/Screenshot 2023-03-05 225415.png')} title='World Map' desc='It is a world map which shows the current time of any country using an API.' />
           </Suspense>
           {/* <Suspense fallback={<div>Loading</div>}>
             <Cards id='card9' className='card ' visit='https://spellingbee2003.netlify.app' image={require('../Images/Screenshot 2023-03-05 225538.png')} title='Spelling Bee' desc='A game to test your vocabulary.' />
           </Suspense> */}
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card7' className='card ' visit='https://endangered.netlify.app' image={require('../Images/endangered.png')} title='Endangered Species' desc='Website to spread awareness about endangered animals.' />
+            <Cards id='card8' className='card ' visit='https://endangered.netlify.app' image={require('../Images/endangered.jpg')} title='Endangered Species' desc='Website to spread awareness about endangered animals.' />
           </Suspense>
           {/* <Suspense fallback={<div>Loading</div>}>
             <Cards id='card9' className='card ' visit='https://cargame2003.netlify.app' image={require('../Images/Screenshot 2023-03-05 225522.png')} title='Car Dash' desc='A car game where you have to dodge the incoming cars.' />
           </Suspense> */}
           <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card8' className='card ' visit='https://underwater2003.netlify.app' image={require('../Images/underwater.png')} title='Under Water' desc='Informative website about the depth of ocean with 3D models.' />
+            <Cards id='card9' className='card ' visit='https://underwater2003.netlify.app' image={require('../Images/underwater.jpg')} title='Under Water' desc='Informative website about the depth of ocean with 3D models.' />
           </Suspense>
-          <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card9' className='card ' visit='https://3d-facetracking-experience.netlify.app/' image={require('../Images/3d-face-track.png')} title='Infinite 3D journey' desc='An infinitely long 3D journey with face tracking.' />
-          </Suspense>
+          {/* <Suspense fallback={<div>Loading</div>}>
+            <Cards id='card9' className='card ' visit='https://3d-facetracking-experience.netlify.app/' image={require('../Images/3d-face-track.jpg')} title='Infinite 3D journey' desc='An infinitely long 3D journey with face tracking.' />
+          </Suspense> */}
 
         </div>
         <NavLink className='allProjects' to="/allProjects">See all other projects.</NavLink>

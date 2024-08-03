@@ -14,8 +14,13 @@ const AllProjects = () => {
         <div className='allPCont'>
 
 
+        <a className='singleProject' href='https://3d-facetracking-experience.netlify.app/' target='_blank'>
+            <img className='projectImg' src={require('../Images/3d-face-track.jpg')} alt="" />
+            <p className='projectDesc'>Infinite 3D journey</p>
+        </a>
+
         <a className='singleProject' href='https://snake-and-ladder2003.netlify.app/' target='_blank'>
-            <img className='projectImg' src={require('../Images/Screenshot 2023-03-05 225457.png')} alt="" />
+            <img className='projectImg' src={require('../Images/Screenshot 2023-03-05 225457.jpg')} alt="" />
             <p className='projectDesc'>Simple snake & ladder game</p>
         </a>
 
@@ -41,7 +46,7 @@ const AllProjects = () => {
         </a> */}
 
         <a className='singleProject' href='https://fashionsite2003.netlify.app/' target='_blank'>
-            <img className='projectImg' src={require('../Images/fashion.png')} alt="" />
+            <img className='projectImg' src={require('../Images/fashion.jpg')} alt="" />
             <p className='projectDesc'>Fashion Website which is also responsive</p>
         </a>
 
@@ -66,7 +71,7 @@ const AllProjects = () => {
         </a>
 
         <a className='singleProject' href='https://3dcontact.netlify.app/' target='_blank'>
-            <img className='projectImg' src={require('../Images/3dcontact.png')} alt="" />
+            <img className='projectImg' src={require('../Images/3dcontact.jpg')} alt="" />
             <p className='projectDesc'>Beautiful contact form with 3d effect in CSS</p>
         </a>
 

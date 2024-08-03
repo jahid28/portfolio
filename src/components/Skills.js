@@ -93,12 +93,12 @@ export default function Skills() {
             
           </div>
 
-          <div className="eachSkill">
+          {/* <div className="eachSkill">
             <p>
               <FaPhp className="php" />PHP
             </p>
             
-          </div>
+          </div> */}
 
           <div className="eachSkill">
             <p>
