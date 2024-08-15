@@ -22,11 +22,11 @@ export default function About() {
 
 
         <div className='aboutContent' >
-          <p>Hello Everyone, my name is Jahid Khan, and I'm a 20-year-old native of New Delhi, India.
-            I am currently in 3rd year of my college(BPIT, New Delhi) studying Information Technology in B-Tech.
+          <p>Hello Everyone, my name is Jahid Khan, and I'm a 21 year old native of New Delhi, India.
+            I am currently in 4th year of my college studying Information Technology in B-Tech.
             Talking about my coding journey, I have always been interested in learning and writing code,
             hence I started my real coding journey by learning some fundamentals of web development back
-            in November, 2021. And till now (March, 2024) I have came a long way in web development and am 
+            in November, 2021. And till now I have came a long way in web development and am 
             also learning some DSA and Devops along with it.
             <br />
 

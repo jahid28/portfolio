@@ -57,12 +57,16 @@ export default function Projects() {
             <Cards id='card3' className='card' visit="https://jahidkhanportfolio3d.netlify.app/" image={require('../Images/3denv.png')} title='3D world' desc='A 3D environment made in ThreeJS where you can explore and find interactive things.' />
           </Suspense>
 
-          <Suspense fallback={<div>Loading</div>}>
+          {/* <Suspense fallback={<div>Loading</div>}>
             <Cards id='card4' className='card' visit="https://organize-hub.vercel.app/" image={require('../Images/organize_hub.png')} title='Organize Hub' desc='This was my first website using NextJS which is a place to take notes and add daily tasks.' />
+          </Suspense> */}
+
+         <Suspense fallback={<div>Loading</div>}>
+            <Cards id='card4' className='card ' visit='https://r3f-10x.vercel.app/' image={require('../Images/r3f-10x.png')} title='Guide to R3F' desc='This is a guide to react-three-fibre with 10 unique and fun sections.' />
           </Suspense>
 
          <Suspense fallback={<div>Loading</div>}>
-            <Cards id='card5' className='card ' visit='https://r3f-10x.vercel.app/' image={require('../Images/r3f-10x.png')} title='Guide to R3F' desc='This is a guide to react-three-fibre with 10 unique and fun sections.' />
+            <Cards id='card5' className='card ' visit='https://projectvaultangular.vercel.app/' image={require('../Images/pv_angular.png')} title='Project Vault' desc='An Angular app where you can add all your projects and share it with others.' />
           </Suspense>
 
           <Suspense fallback={<div>Loading</div>}>

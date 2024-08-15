@@ -14,6 +14,11 @@ const AllProjects = () => {
         <div className='allPCont'>
 
 
+        <a className='singleProject' href='https://organize-hub.vercel.app/' target='_blank'>
+            <img className='projectImg' src={require('../Images/organize_hub.png')} alt="" />
+            <p className='projectDesc'>Organize Hub</p>
+        </a>
+
         <a className='singleProject' href='https://3d-facetracking-experience.netlify.app/' target='_blank'>
             <img className='projectImg' src={require('../Images/3d-face-track.jpg')} alt="" />
             <p className='projectDesc'>Infinite 3D journey</p>

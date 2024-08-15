@@ -52,6 +52,9 @@
   top: 5px;
   font-size: 3rem;
 }
+.iama span {
+  color: rgb(226, 68, 68);
+}
 
 .tagline,
 .tagline-skill {
@@ -186,6 +189,7 @@ transform: none;
   position: relative;
   top: 6rem;
   left: 0rem;
+  filter: blur(2px);
   /* overflow-x: hidden; */
 }
 

@@ -111,6 +111,7 @@
   position: relative;
   top: 16rem;
   left: 90rem;
+  filter: blur(2px);
 }
 
 

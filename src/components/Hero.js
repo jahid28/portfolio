@@ -74,14 +74,14 @@ export default function Hero() {
       </div>
 
       <main id='observingThreeSkills' className='mythreeSkills'>
-        <div className='iama'>I am a</div>
-        <header>
+        <div className='iama'>I am a <span>Fullstack Developer</span></div>
+        {/* <header>
           <p className="tagline">
             <span className="tagline-skill"><span className="tagline-skill_inner">Developer</span></span>
             <span className="tagline-skill"><span className="tagline-skill_inner">3D Artist</span></span>
             <span className="tagline-skill"><span className="tagline-skill_inner">Youtuber</span></span>
           </p>
-        </header>
+        </header> */}
       </main>
 
 

@@ -15,7 +15,7 @@ import {
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
-import { FaPhp } from "react-icons/fa";
+import { FaPhp,FaAngular } from "react-icons/fa";
 
 export default function Skills() {
   return (
@@ -68,6 +68,12 @@ export default function Skills() {
            
           </div>
 
+          <div className="eachSkill">
+            <p>
+              <FaAngular className="a-icon"/>Angular JS
+            </p>
+           
+          </div>
           <div className="eachSkill">
             <p>
               <TbBrandNextjs className="i"/>Next JS
