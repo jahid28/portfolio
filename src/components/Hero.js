@@ -89,7 +89,7 @@ export default function Hero() {
       <div className='twoBtns'>
         {/* <Link to='/about'><button className='btnAbout'>About Me</button></Link> */}
         <button onClick={aboutPage} className='btnAbout'>About Me</button>
-        <a href="https://drive.google.com/file/d/1aSPWT9GFw6fqPW8El3DlM2B4ZgbI_oJV/view?usp=sharing" target='_blank' ><button className='btnResume'>My Resume</button></a>
+        <a href="https://drive.google.com/file/d/1tQDHsrWIO8o8i4kM_Qu-ag6WaDPyN4oe/view?usp=sharing" target='_blank' ><button className='btnResume'>My Resume</button></a>
         {/* <a href={resume} download="Jahid's Resume"><button className='btnResume'>Download Resume</button></a> */}
       </div>
 

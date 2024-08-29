@@ -15,7 +15,9 @@ import {
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
-import { FaPhp,FaAngular } from "react-icons/fa";
+import { FaPhp,FaAngular,FaDocker } from "react-icons/fa";
+import { FaJenkins } from "react-icons/fa6";
+import { SiAnsible,SiKubernetes } from "react-icons/si";
 
 export default function Skills() {
   return (
@@ -185,8 +187,33 @@ export default function Skills() {
               <i className="fa-solid fa-star"></i>
               <i className="fa-regular fa-star"></i>
               <i className="fa-regular fa-star"></i>
-            </p> */}
+              </p> */}
           </div>
+
+              <div className="eachSkill">
+                <p>
+                  <FaJenkins className="jenkins i"/>Jenkins
+                </p>
+               
+              </div>
+              <div className="eachSkill">
+                <p>
+                  <SiAnsible className="i"/>Ansible
+                </p>
+               
+              </div>
+              <div className="eachSkill">
+                <p>
+                  <FaDocker className="docker i"/>Docker
+                </p>
+               
+              </div>
+              <div className="eachSkill">
+                <p>
+                  <SiKubernetes className="kuber i"/>Kubernetes
+                </p>
+               
+              </div>
         </div>
       </section>
 
