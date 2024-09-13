@@ -1,13 +1,13 @@
 import React from 'react'
 import '../css/Contact.css'
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Link
 } from "react-router-dom";
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 
 export default function Contact() {

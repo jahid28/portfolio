@@ -4,7 +4,7 @@ import '../css/Projects.css'
 import { Suspense, lazy } from 'react'
 
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   NavLink
 } from "react-router-dom";
 export default function Projects() {

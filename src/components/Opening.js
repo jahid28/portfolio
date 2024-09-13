@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, Suspense } from "react";
+import React, { useEffect } from "react";
 import "../css/Opening.css";
 
 export default function Opening() {
@@ -16,7 +16,7 @@ export default function Opening() {
 
   return (
     <div id="openingBody" className="body">
-      <a
+      <p
         id="upArrow"
         onClick={() => {
           document.body.scrollTop = 0; // For Safari
@@ -24,7 +24,7 @@ export default function Opening() {
         }}
       >
         <i className="fa-solid fa-circle-chevron-up"></i>
-      </a>
+      </p>
 
       <div className="heading">
         <p className="hi">Hi, I'm</p>

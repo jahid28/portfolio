@@ -2,11 +2,10 @@ import React from 'react'
 import '../css/Hero.css';
 
 import {
-  BrowserRouter as Router,
-  Link,
+  // BrowserRouter as Router,
+  // Link,
   useNavigate
 } from "react-router-dom";
-import { useState } from 'react';
 
 export default function Hero() {
 
@@ -28,9 +27,17 @@ export default function Hero() {
   
     let val = e.target.innerText
     let arr = Array.from(val)
-    let xx = eval((arr.splice(0, 3)).join(''))
-    let yy = eval(arr.join(''))
-    // console.log(xx,yy)
+    let xx = Number(arr.splice(0, 3).join(''))  // Join first part
+let yy = Number(arr.join(''))               // Join remaining part
+
+// Parse the expressions safely using custom logic (for numbers and operators)
+// let safeEval = (str) => {
+//     return new Function('return ' + str)(); // Safely evaluate expressions like "1+2"
+// };
+
+// xx = safeEval(xx);
+// yy = safeEval(yy);
+//     // console.log(xx,yy)
       document.getElementById('cont').style.transform = `perspective(1200px) rotateX(${xx}deg) rotateY(${yy}deg)`
       
     }
@@ -89,7 +96,7 @@ export default function Hero() {
       <div className='twoBtns'>
         {/* <Link to='/about'><button className='btnAbout'>About Me</button></Link> */}
         <button onClick={aboutPage} className='btnAbout'>About Me</button>
-        <a href="https://drive.google.com/file/d/1tQDHsrWIO8o8i4kM_Qu-ag6WaDPyN4oe/view?usp=sharing" target='_blank' ><button className='btnResume'>My Resume</button></a>
+        <a href="https://drive.google.com/file/d/1tQDHsrWIO8o8i4kM_Qu-ag6WaDPyN4oe/view?usp=sharing" target='_blank' rel="noreferrer"><button className='btnResume'>My Resume</button></a>
         {/* <a href={resume} download="Jahid's Resume"><button className='btnResume'>Download Resume</button></a> */}
       </div>
 

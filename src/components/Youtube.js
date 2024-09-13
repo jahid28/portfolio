@@ -19,7 +19,7 @@ export default function Youtube() {
         <p>YOUTUBE</p>
       </div>
       <p className='myYT'>My Youtube Channel:</p>
-      <h2 className='para'>I have a youtube channel called <span><a href="https://www.youtube.com/channel/UCe65gfP4Vr1_NVbZo-r-oSA" target='_blank'> Techy Web Dev </a></span> where I upload tutorials and informative videos regarding web development. Here are some of my most popular videos :</h2>
+      <h2 className='para'>I have a youtube channel called <span><a href="https://www.youtube.com/channel/UCe65gfP4Vr1_NVbZo-r-oSA" target='_blank' rel="noreferrer"> Techy Web Dev </a></span> where I upload tutorials and informative videos regarding web development. Here are some of my most popular videos :</h2>
 
       <div className='allYTVideos'>
         <Suspense fallback={<div>Loading</div>}>

@@ -13,7 +13,7 @@ export default function Cards(props) {
     <div className='cardBody' >
       <div id={props.id} className='cards ' style={{ color: 'white', }}>
         <div className="card" >
-          <a href={props.visit} target='_blank' style={astyle}>
+          <a href={props.visit} target='_blank' rel='noreferrer' style={astyle}>
             <img loading='lazy' style={{ maxHeight: '200px' }} src={props.image} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{props.title}</h5>

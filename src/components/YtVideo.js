@@ -8,7 +8,7 @@ export default function YtVideo(props) {
     return (
         <div className='YtVideoBody' >
 
-            <iframe id={props.ytID} className='video' src={props.vidLink} allowFullScreen frameBorder="0"></iframe>
+            <iframe title={'myvideo'+props.ytID} id={props.ytID} className='video' src={props.vidLink} allowFullScreen frameBorder="0"></iframe>
 
         </div>
     )

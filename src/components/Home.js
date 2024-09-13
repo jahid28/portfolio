@@ -1,13 +1,13 @@
 import React from 'react';
 import { Suspense, lazy } from 'react';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Opening from './Opening.js';
-import Hero from './Hero.js';
-import Skills from './Skills';
-import Projects from './Projects';
-import Youtube from './Youtube';
-import Footer from './Footer';
+// import Hero from './Hero.js';
+// import Skills from './Skills';
+// import Projects from './Projects';
+// import Youtube from './Youtube';
+// import Footer from './Footer';
 // import { CanvasFooter } from './Footer';
 
 export default function Home() {

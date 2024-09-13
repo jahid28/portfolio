@@ -6,7 +6,7 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiBlender,
-  SiPython,
+  // SiPython,
   SiAmazonaws,
   SiMongodb,
   SiLinux,
@@ -15,7 +15,7 @@ import {
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
-import { FaPhp,FaAngular,FaDocker } from "react-icons/fa";
+import { FaAngular,FaDocker } from "react-icons/fa";
 import { FaJenkins } from "react-icons/fa6";
 import { SiAnsible,SiKubernetes } from "react-icons/si";
 
