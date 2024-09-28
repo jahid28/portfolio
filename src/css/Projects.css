@@ -9,20 +9,22 @@
 
 
 .someProjects {
+  font-size: 4rem;
+  display: flex;
+}
+.someProjects p{
+  opacity: 0;
   color: transparent;
   background: linear-gradient(
     to right,
     rgb(182, 129, 49),
-    rgb(246, 221, 122),
+    rgb(189, 170, 95),
     rgb(160, 115, 47)
   );
-  -webkit-text-stroke: 1px rgb(201, 157, 69);
-  font-size: 4rem;
+  -webkit-text-stroke: 1px rgb(30, 30, 30);
   font-family: "Raleway", sans-serif;
   background-clip: content-box;
   -webkit-background-clip: text;
-  /* font-weight: 100; */
-  /* margin: 20px 0px 0px 20px; */
 }
 
 .allProjects{

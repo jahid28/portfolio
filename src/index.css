@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    filter: blur(16px);
+    transform: scale(1.5);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+  }
+}

@@ -32,8 +32,12 @@ export default function Opening() {
       </div>
 
     
-      <p className="welcome">Scroll Down</p>
-      <i className="fa-solid fa-arrow-down-long arrow"></i>
+      {/* <p className="welcome">Scroll Down</p> */}
+      <i onClick={() => {
+          document.body.scrollTop = window.innerHeight; // For Safari
+          document.documentElement.scrollTop = window.innerHeight;
+        }}
+         className="fa-solid fa-arrow-down-long arrow"></i>
     </div>
   );
 }

@@ -41,14 +41,14 @@
 #userTextinp {
   background-color: var(--inp-color);
   border: transparent;
-  border-bottom: 2px solid rgb(234, 65, 65);
+  border-bottom: 2px solid rgb(233, 83, 83);
   padding: 5px;
   width: 30rem;
   color: var(--p-color);
 }
 
 #userTextinp {
-  border: 2px solid rgb(234, 65, 65);
+  border: 2px solid rgb(233, 83, 83);
   height: 20rem;
 }
 

@@ -110,10 +110,12 @@
 }
 
 .arrow {
-  color: #e24444;
+  color: rgb(233, 83, 83);
+  /* border: 2px solid red; */
+  cursor: pointer;
   transform: scale(1.5);
   position: absolute;
-  animation: arrow linear infinite 1s;
+  animation: arrow linear infinite 1.5s;
 }
 
 .anchor {
@@ -123,13 +125,13 @@
 
 @keyframes arrow {
   0% {
-    top: 85vh;
+    top: 90vh;
   }
   50% {
-    top: 86vh;
+    top: 92vh;
   }
   100% {
-    top: 85vh;
+    top: 90vh;
   }
 }
 
@@ -144,7 +146,7 @@
   right: 2rem;
   bottom: 2rem;
   cursor: pointer;
-  color: rgb(226, 68, 68);
+  color: rgb(233, 83, 83);
   transition: all linear 0.3s;
 }
 

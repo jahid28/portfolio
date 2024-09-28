@@ -17,11 +17,6 @@
   }
 
 
-section {
-  /* border: 2px solid red; */
-  /* display: flex; */
-}
-
 section > div{
   display: flex;
   flex-wrap: wrap;
@@ -73,17 +68,20 @@ padding: 0 6px 0 6px;
 }
 
 
-
-.myskills {
+.myskills{
+  display: flex;
+  font-size: 4rem;
+}
+.myskills p{
+  opacity: 0;
   color: transparent;
   background: linear-gradient(
     to right,
     rgb(182, 129, 49),
-    rgb(246, 221, 122),
+    rgb(189, 170, 95),
     rgb(160, 115, 47)
   );
   -webkit-text-stroke: 1px rgb(30, 30, 30);
-  font-size: 4rem;
   font-family: "Raleway", sans-serif;
   background-clip: content-box;
   -webkit-background-clip: text;
@@ -150,7 +148,7 @@ padding: 0 6px 0 6px;
   color: rgb(120, 166, 208);
 }
 .typescript{
-  color: rgb(68, 105, 139);
+  color: rgb(90, 137, 178);
 }
 .blender{
   color: rgb(222, 129, 58);
@@ -186,6 +184,9 @@ padding: 0 6px 0 6px;
 .fa-node-js,
 .mongodb {
   color: rgb(108, 185, 57);
+}
+.terra {
+  color: #7b42bc;
 }
 .php{
   color: rgb(218, 142, 218);
@@ -321,23 +322,10 @@ padding: 0 6px 0 6px;
   
 }
 
-@media (max-width: 900px) {
-  .allskills {
-    
-    /* font-size: 25px; */
-  }
-}
 
 @media (max-width: 800px) {
   .myskills {
     font-size: 8vw;
-  }
-  .allskills {
-    /* top: 0rem;
-    left: 23vw; */
-    /* margin-left: -6vw; */
-    /* font-size: 4.2vw; */
-    /* font-size: 20px; */
   }
 
   .allskills1 {
@@ -360,10 +348,7 @@ padding: 0 6px 0 6px;
 }
 
 @media (max-width: 700px) {
-  .allskills {
-   
-    /* font-size: 19px; */
-  }
+ 
   .allskills div{
     margin-bottom: 20px;
   }
@@ -408,9 +393,7 @@ padding: 0 6px 0 6px;
 .skillRotateBigCont {
   top: 50vh;
 }
-.allskills {
-  /* font-size: 12px; */
-}
+
 }
 
 @media (max-width: 400px) {

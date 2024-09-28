@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../css/Skills.css";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import {
@@ -11,94 +11,130 @@ import {
   SiMongodb,
   SiLinux,
   SiGnubash,
-  SiGithub
+  SiGithub,
+  SiTerraform,
 } from "react-icons/si";
+
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
-import { FaAngular,FaDocker } from "react-icons/fa";
+import { FaAngular, FaDocker } from "react-icons/fa";
 import { FaJenkins } from "react-icons/fa6";
-import { SiAnsible,SiKubernetes } from "react-icons/si";
+import { SiAnsible, SiKubernetes } from "react-icons/si";
 
 export default function Skills() {
+  const fadeInSkills = useRef(null);
+
+  useEffect(() => {
+    const target = fadeInSkills.current;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll(".fadeInSkills").forEach((item, index) => {
+            item.style.animation = `fadeInAnimation .6s forwards ease-out ${
+              index / 8
+            }s`;
+          });
+        } else {
+          document.querySelectorAll(".fadeInSkills").forEach((item, index) => {
+            item.style.animation = "none";
+          });
+        }
+      });
+    });
+
+    if (target) {
+      observer.observe(target);
+    }
+    return () => {
+      if (target) {
+        observer.unobserve(target);
+      }
+    };
+  }, []);
+
   return (
     <div className="skillBody">
-      <p className="myskills">My Skills :</p>
+      <div ref={fadeInSkills} className="myskills">
+        <p className="fadeInSkills">M</p>
+        <p className="fadeInSkills" style={{ marginRight: "1rem" }}>
+          y
+        </p>
+        <p className="fadeInSkills">S</p>
+        <p className="fadeInSkills">k</p>
+        <p className="fadeInSkills">i</p>
+        <p className="fadeInSkills">l</p>
+        <p className="fadeInSkills">l</p>
+        <p className="fadeInSkills">s</p>
+      </div>
 
       <section>
-          <h2>Frontend Development :</h2>
+        <h2>Frontend Development :</h2>
         <div className="frontend">
-
           <div className="eachSkill">
             <p>
               <i className="fa-brands fa-html5"></i>HTML
             </p>
-            
           </div>
 
           <div className="eachSkill">
             <p>
               <i className="fa-brands fa-css3-alt"></i>CSS
             </p>
-          
           </div>
 
           <div className="eachSkill">
             <p>
-              <SiTailwindcss className="tailwind i" />Tailwind
+              <SiTailwindcss className="tailwind i" />
+              Tailwind
             </p>
-           
           </div>
 
           <div className="eachSkill">
             <p>
               <i className="fa-brands fa-js"></i>Javascript
             </p>
-           
           </div>
 
           <div className="eachSkill">
             <p>
-              <SiTypescript className="typescript i" />Typescript
+              <SiTypescript className="typescript i" />
+              Typescript
             </p>
-           
           </div>
 
           <div className="eachSkill">
             <p>
               <i className="fa-brands fa-react"></i>React JS
             </p>
-           
           </div>
 
           <div className="eachSkill">
             <p>
-              <FaAngular className="a-icon"/>Angular JS
+              <FaAngular className="a-icon" />
+              Angular JS
             </p>
-           
           </div>
           <div className="eachSkill">
             <p>
-              <TbBrandNextjs className="i"/>Next JS
+              <TbBrandNextjs className="i" />
+              Next JS
             </p>
-           
           </div>
         </div>
 
-          <h2>Backend Development :</h2>
+        <h2>Backend Development :</h2>
         <div className="backend">
-
           <div className="eachSkill">
             <p>
               <i class="fa-brands fa-node-js"></i>Node JS
             </p>
-           
           </div>
 
           <div className="eachSkill">
             <p>
-              <SiExpress className="i" />Express JS
+              <SiExpress className="i" />
+              Express JS
             </p>
-            
           </div>
 
           {/* <div className="eachSkill">
@@ -110,75 +146,77 @@ export default function Skills() {
 
           <div className="eachSkill">
             <p>
-              <SiMongodb className="mongodb i" />MongoDB
+              <SiMongodb className="mongodb i" />
+              MongoDB
             </p>
           </div>
 
           <div className="eachSkill">
             <p>
-              <BiLogoPostgresql className="postgre i" />PostgreSQL
+              <BiLogoPostgresql className="postgre i" />
+              PostgreSQL
             </p>
           </div>
 
           <div className="eachSkill">
             <p>
-              <DiRedis className="redis i" />Redis
+              <DiRedis className="redis i" />
+              Redis
             </p>
           </div>
         </div>
 
-          <h2>3D Development :</h2>
+        <h2>3D Development :</h2>
         <div className="3d">
-
           <div className="eachSkill">
             <p>
-              <SiBlender className="blender i" />Blender 3D
+              <SiBlender className="blender i" />
+              Blender 3D
             </p>
-          
           </div>
 
           <div className="eachSkill">
             <p>
-              <TbBrandThreejs className="i"/>Three JS
+              <TbBrandThreejs className="i" />
+              Three JS
             </p>
-            
           </div>
 
           <div className="eachSkill">
             <p>
-              <TbBrandThreejs className="i"/>R3F
+              <TbBrandThreejs className="i" />
+              R3F
             </p>
-            
           </div>
         </div>
 
-          <h2>Devops :</h2>
+        <h2>DevOps :</h2>
         <div className="devops">
-
           <div className="eachSkill">
             <p>
-              <SiLinux className="i" />Linux
+              <SiLinux className="i" />
+              Linux
             </p>
-           
           </div>
 
           <div className="eachSkill">
             <p>
-              <SiGithub className="github i"/>Git/GitHub
+              <SiGithub className="github i" />
+              Git/GitHub
             </p>
-          
           </div>
 
           <div className="eachSkill">
             <p>
-              <SiGnubash className="i"/>Bash
+              <SiGnubash className="i" />
+              Bash
             </p>
-           
           </div>
 
           <div className="eachSkill">
             <p>
-              <SiAmazonaws className="aws i" />AWS
+              <SiAmazonaws className="aws i" />
+              AWS
             </p>
             {/* <p>AWS</p> */}
             {/* <p className="fiveStars">
@@ -190,30 +228,36 @@ export default function Skills() {
               </p> */}
           </div>
 
-              <div className="eachSkill">
-                <p>
-                  <FaJenkins className="jenkins i"/>Jenkins
-                </p>
-               
-              </div>
-              <div className="eachSkill">
-                <p>
-                  <SiAnsible className="i"/>Ansible
-                </p>
-               
-              </div>
-              <div className="eachSkill">
-                <p>
-                  <FaDocker className="docker i"/>Docker
-                </p>
-               
-              </div>
-              <div className="eachSkill">
-                <p>
-                  <SiKubernetes className="kuber i"/>Kubernetes
-                </p>
-               
-              </div>
+          <div className="eachSkill">
+            <p>
+              <FaJenkins className="jenkins i" />
+              Jenkins
+            </p>
+          </div>
+          <div className="eachSkill">
+            <p>
+              <SiAnsible className="i" />
+              Ansible
+            </p>
+          </div>
+          <div className="eachSkill">
+            <p>
+              <FaDocker className="docker i" />
+              Docker
+            </p>
+          </div>
+          <div className="eachSkill">
+            <p>
+              <SiKubernetes className="kuber i" />
+              Kubernetes
+            </p>
+          </div>
+          <div className="eachSkill">
+            <p>
+              <SiTerraform className="terra i" />
+              Terraform
+            </p>
+          </div>
         </div>
       </section>
 

@@ -6,7 +6,7 @@ const AllProjects = () => {
         document.documentElement.scrollTop = 0;
     },[])
   return (
-    <div>
+    <div style={{padding:"2rem 0"}}>
         <div className='allProjectsP'>
           <p>Here are my all other projects :</p>
         </div>

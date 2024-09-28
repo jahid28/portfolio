@@ -3,7 +3,7 @@
 }
 
 .header {
-  background-color: #eb5353;
+  background-color: rgb(233, 83, 83);
   /* background-color: red; */
   height: 100%;
   /* top: 0; */
@@ -95,7 +95,7 @@
   font-size: 1.4rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  border-bottom: 2px solid rgb(235, 83, 83);
+  border-bottom: 2px solid rgb(233, 83, 83);
   margin: 40px 0px;
 }
 
@@ -110,7 +110,7 @@
   right: 2rem;
   top: 2rem;
   cursor: pointer;
-  color: rgb(235, 83, 83);
+  color: rgb(233, 83, 83);
   transition: all linear 0.3s;
 }
 

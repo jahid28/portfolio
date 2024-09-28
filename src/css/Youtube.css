@@ -9,22 +9,28 @@
   
   }
 .ytBody {
-  height: 45rem;
+  /* border: 2px solid red; */
+  /* height: 45rem; */
   overflow: hidden;
   position: relative;
-  margin: 5px 10px;
+  margin: 2rem 10px;
 }
 
 .myYT {
+  display: flex;
+  font-size: 4rem;
+
+}
+.myYT p{
+  opacity: 0;
   color: transparent;
   background: linear-gradient(
     to right,
     rgb(182, 129, 49),
-    rgb(246, 221, 122),
+    rgb(189, 170, 95),
     rgb(160, 115, 47)
   );
   -webkit-text-stroke: 1px rgb(30, 30, 30);
-  font-size: 4rem;
   font-family: "Raleway", sans-serif;
   background-clip: content-box;
   -webkit-background-clip: text;
@@ -46,7 +52,7 @@
 .para span a {
   font-size: 1.9rem;
   /* text-decoration: none; */
-  color: rgb(207, 105, 105);
+  color: rgb(233, 83, 83);
   transition: all linear 0.2s;
 }
 
@@ -93,9 +99,9 @@
 }
 
 @media (max-width: 800px) {
-  .ytBody {
+  /* .ytBody {
     height: 130vw;
-  }
+  } */
   .myYT {
     font-size: 8vw;
   }
@@ -114,16 +120,11 @@
   }
 }
 
-@media (max-width: 700px) {
-  .ytBody {
-    height: 135vw;
-  }
-}
 
 @media (max-width: 600px) {
-  .ytBody {
+  /* .ytBody {
     height: 145vw;
-  }
+  } */
   .para {
     font-size: 3.9vw;
     margin: 5px 5px;
@@ -133,17 +134,12 @@
   }
 }
 
-@media (max-width: 500px) {
-  .ytBody {
-    height: 135vw;
-  }
-}
 
 @media (max-width: 400px) {
   
-  .ytBody {
+  /* .ytBody {
     height: 150vw;
-  }
+  } */
   .para {
     font-size: 4.5vw;
   }
@@ -153,9 +149,9 @@
 }
 @media (max-width: 350px) {
   
-  .ytBody {
+  /* .ytBody {
     height: 165vw;
-  }
+  } */
   .para {
     font-size: 4.5vw;
   }

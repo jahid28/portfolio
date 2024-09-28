@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from "react";
 // import Cards from './Cards'
 import '../css/Projects.css'
 import { Suspense, lazy } from 'react'
@@ -8,6 +8,7 @@ import {
   NavLink
 } from "react-router-dom";
 export default function Projects() {
+  const fadeInProjects = useRef(null);
 
   const Cards = lazy(() => import('./Cards'))
 
@@ -16,6 +17,35 @@ export default function Projects() {
     // document.getElementById('bgWebsites').style.left = -scrYWeb * .6 + 'px';
     document.getElementById('bgProjects').style.left = -scrYWeb * .6 + 'px';
   })
+
+  useEffect(() => {
+    const target = fadeInProjects.current;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll(".fadeInProjects").forEach((item, index) => {
+            item.style.animation = `fadeInAnimation .6s forwards ease-out ${
+              index / 8
+            }s`;
+          });
+          
+        } else {
+          document.querySelectorAll(".fadeInProjects").forEach((item, index) => {
+              item.style.animation = "none";
+            });
+        }
+      });
+    });
+
+    if (target) {
+      observer.observe(target);
+    }
+    return () => {
+      if (target) {
+        observer.unobserve(target);
+      }
+    };
+  }, []);
 
   return (
     <div className='projectsBody' >
@@ -41,7 +71,24 @@ export default function Projects() {
           <p>PROJECTS</p>
         </div>
 
-        <p className='someProjects'>My Best Projects :</p>
+        <div ref={fadeInProjects} className='someProjects'>
+          <p className='fadeInProjects'>M</p>
+          <p className='fadeInProjects' style={{marginRight:"1rem"}}>y</p>
+          {/* <p className='fadeInProjects'> </p> */}
+          <p className='fadeInProjects'>B</p>
+          <p className='fadeInProjects'>e</p>
+          <p className='fadeInProjects'>s</p>
+          <p className='fadeInProjects' style={{marginRight:"1rem"}}>t</p>
+          {/* <p className='fadeInProjects'> </p> */}
+          <p className='fadeInProjects'>P</p>
+          <p className='fadeInProjects'>r</p>
+          <p className='fadeInProjects'>o</p>
+          <p className='fadeInProjects'>j</p>
+          <p className='fadeInProjects'>e</p>
+          <p className='fadeInProjects'>c</p>
+          <p className='fadeInProjects'>t</p>
+          <p className='fadeInProjects'>s</p>
+        </div>
 
         <div className='allJSprojects' loading='lazy'>
 

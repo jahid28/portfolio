@@ -23,13 +23,16 @@
   -webkit-background-clip: text;
   margin-bottom: 20px;
   margin-left: 2rem;
+  /* border: 2px solid red; */
+  width: fit-content;
+  /* margin-top: 2rem; */
 }
 
 .singleProject {
   display: flex;
   border: 1px solid rgb(169, 124, 82);
   border-radius: 10px;
-  margin: 20px 40px 0px 40px;
+  margin: 2rem 2rem 0 2rem;
   text-decoration: none;
   transition: all linear 0.2s;
 }
@@ -38,9 +41,10 @@
   box-shadow: 0px 0px 10px 0px rgb(242, 183, 128);
 }
 .projectImg {
-  width: 20vw;
-  height: 20vh;
+  width: 20rem;
+  height: 10rem;
   border-radius: 10px;
+  /* border: 2px solid red; */
   /* height: 100px; */
 }
 .projectDesc {
@@ -57,11 +61,10 @@
   .projectDesc {
     font-size: 1.5rem;
   }
-  .projectImg {
+  /* .projectImg {
     width: 15vw;
     height: 10vh;
-    /* height: 100px; */
-  }
+  } */
 }
 @media (max-width: 810px) {
   .allProjectsP p {
@@ -71,25 +74,27 @@
 @media (max-width: 600px) {
   .allProjectsP p {
     font-size: 2rem;
+    margin-left: 1rem;
+    max-width: 80%;
   }
   .projectDesc {
     font-size: 1rem;
   }
   .projectImg {
-    width: 40vw;
-    height: 15vh;
+    width: 12rem;
+    height: 6rem;
     /* height: 100px; */
   }
   .singleProject {
-    margin: 20px 20px 0px 20px;
+    margin: 1rem 1rem 0px 1rem;
 
-    display: grid;
+    /* display: grid; */
     /* place-items: center; */
   }
-  .allPCont {
+  /* .allPCont {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 }
 
 @media (max-width: 420px) {
