@@ -19,7 +19,7 @@ const AllProjects = () => {
             <p className='projectDesc'>Organize Hub</p>
         </a>
 
-        <a className='singleProject' href='https://3d-facetracking-experience.netlify.app/' target='_blank' rel='noreferrer'>
+        <a className='singleProject' href='https://halloween-3d-face-tracking.vercel.app/' target='_blank' rel='noreferrer'>
             <img className='projectImg' src={require('../Images/3d-face-track.jpg')} alt="" />
             <p className='projectDesc'>Infinite 3D journey</p>
         </a>

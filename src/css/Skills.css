@@ -35,7 +35,7 @@ margin-bottom: 1rem;
 .eachSkill{
 
   margin-right: 2rem;
-  z-index: 200;
+  /* z-index: 200; */
 }
 
 .eachSkill p{

@@ -105,7 +105,7 @@ export default function Hero() {
               About Me
             </button>
             <a
-              href="https://drive.google.com/file/d/1tQDHsrWIO8o8i4kM_Qu-ag6WaDPyN4oe/view?usp=sharing"
+              href="https://drive.google.com/file/d/1csW8IpOP9KUaIGedejnGq-C-yvFm3VBl/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
